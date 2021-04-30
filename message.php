@@ -9,6 +9,8 @@ $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
 $check_data = "SELECT replies FROM chatbot WHERE queries LIKE '%$getMesg%'";
 $run_query = mysqli_query($conn, $check_data) or die("Error");
 
+//tes
+
 // if user query matched to database query we'll show the reply otherwise it go to else statement
 if(mysqli_num_rows($run_query) > 0){
     //fetching replay from the database according to the user query
